@@ -1,0 +1,94 @@
+:root {
+    --primary: #594e4e;
+    --secondary:#8c38ff;
+    --dark: #131a26;
+    --light: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+.App {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.calculator {
+    border: solid 5px;
+    border-color: var(--primary);
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--primary);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+}
+h2 {
+    text-align: center;
+    color: var(--secondary);
+}
+
+.display {
+    border-radius: 12px;
+    padding: 16px;
+    text-align: right;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.display span {
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+button {
+    border:  solid 2px;
+    border-color: var(--primary);
+    appearance: none;
+    border-radius: 12px;
+    outline: none;
+    color: #FFF;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.operators {
+    display: flex;
+}
+
+.operators button {
+    flex: 1 1 0%;
+    background-color: var(--dark);
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digits button {
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    background-color: var(--dark);
+}
